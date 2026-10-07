@@ -1,14 +1,9 @@
-# A fast, small, safe, gradually typed embeddable scripting language derived from Lua
-#
-# https://github.com/luau-lang/luau
-# https://luau.org/
+# Sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
 
-# Code coverage
-coverage.out
-
-# Profiling
-profile.out
-profile.svg
-
-# Time trace
-trace.json
+# Copia local que genera el loader (si pruebas desde esta carpeta)
+WindUI/
+HybridCache.lua
