@@ -22,7 +22,7 @@ No modifica el código de la librería original.
 ## Uso
 
 ```lua
-local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/WindUI-Hybrid.lua"))()
+local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/edwin3166/wind-ui-mod/main/WindUI-Hybrid.lua"))()
 
 local Window = WindUI:CreateWindow({
     Title = "Mi Hub",
@@ -62,7 +62,7 @@ Escríbela antes de cargar el loader:
 
 ```lua
 getgenv().WindUIHybrid = {
-    Source = "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/main.lua", -- tu copia, se prueba primero
+    Source = "https://raw.githubusercontent.com/edwin3166/wind-ui-mod/main/main.lua", -- tu copia, se prueba primero
     NewElements = true,  -- false = estilo clásico por defecto
     Cache = true,        -- false = no guardar copia local
     PreferCache = false, -- true = arranque rápido con la copia local
