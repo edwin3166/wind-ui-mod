@@ -78,6 +78,25 @@ Después de cargar, `WindUI.HybridInfo` indica de dónde salió la librería:
 print(WindUI.HybridInfo.Source, WindUI.HybridInfo.FromCache, WindUI.HybridInfo.Version)
 ```
 
+## Cargar sin el loader
+
+Si prefieres lo más simple, carga directamente tu copia de WindUI. Tiene `NewElements` activado por defecto, pero sin reintentos ni copia local de respaldo:
+
+```lua
+local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/edwin3166/wind-ui-mod/main/main.lua"))()
+```
+
+## Solución de problemas
+
+- **Error 404 al cargar:** comprueba que el repositorio sea público y que los nombres de los archivos coincidan exactamente, con mayúsculas y guiones (`WindUI-Hybrid.lua`, `main.lua`), en la rama `main`.
+- **No carga y no sabes por qué:** pon `Debug = true` en `getgenv().WindUIHybrid` y mira la consola.
+- **Se ve el estilo clásico:** revisa que no estés pasando `NewElements = false` y que `main.lua` empiece con `v1.6.66-alt`.
+- **Quieres saber de dónde salió la librería:** imprime `WindUI.HybridInfo`.
+
+## Versiones
+
+Las versiones publicadas están en [Releases](https://github.com/edwin3166/wind-ui-mod/releases).
+
 ## Aviso
 
 `loadstring` ejecuta el código que haya en ese enlace en el momento de cargar. Si quieres que el código no cambie nunca, usa tu propia copia (`main.lua`) en `Source`.
